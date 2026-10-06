@@ -12,6 +12,7 @@ public class coinInserted implements MachineI {
 
 
 private  StateEnum label= StateEnum.MONEY;
+
 @Override
 public void selectProduct (String productCode, MachineContext machineContext) {
 	
@@ -30,6 +31,9 @@ public void insertMoney (CoinTypes coin, MachineContext machineContext) {
 
 @Override
 public void selectDispatch (MachineContext machineContext) {
+	
+	
+	System.out.println ("MOVED TO "+ StateEnum.DISPENCE+"State");
 	
 	machineContext.setMachineState (new DispencingState ());
 	

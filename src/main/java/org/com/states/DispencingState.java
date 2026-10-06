@@ -30,7 +30,7 @@ public void insertMoney (CoinTypes coin, MachineContext machineContext) {
 @Override
 public void selectDispatch (MachineContext machineContext) {
 	
-	System.out.println ("Diancing item" + machineContext.getProductCode () + "price" + machineContext.getItemPriceNeeded ());
+	System.out.println ("pLEASE COLLECT YOUR ITEMS" + machineContext.getProductCode () + "price" + machineContext.getItemPriceNeeded ());
 	
 	
 	machineContext.getInventry ().removeItem (machineContext.getProductCode (), 1);
@@ -42,6 +42,9 @@ public void selectDispatch (MachineContext machineContext) {
 	System.out.println ("collect you change " + machineContext.getBalance ());
 	
 	machineContext.setBalance (0);
+	
+	System.out.println ("MOVED TO "+ StateEnum.IDLE+" aFTER SUCESSSFULE TRANSACTION");
+	
 	machineContext.setMachineState (new IdleState ());
 	
 	

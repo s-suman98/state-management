@@ -20,6 +20,13 @@ public void selectProduct (String productCode, MachineContext machineContext) {
 	}
 	machineContext.setProductCode (productCode);
 	System.out.println ("Item code "+productCode+"selected");
+	
+	machineContext.setItemPriceNeeded (machineContext.getInventry ().getPrice (productCode));
+	
+	System.out.println ("Reuuired price set  "+ machineContext.getItemPriceNeeded ());
+	
+	System.out.println ("MOVED TO "+ StateEnum.PRODUCT+"sTAE");
+	
 	machineContext.setMachineState (new ProductSelected ());
 }
 

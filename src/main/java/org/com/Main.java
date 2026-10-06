@@ -20,9 +20,19 @@ public static void main (String[] args) {
 	System.out.println (vending.getMachineState ());
 	
 vending.insertMoney (CoinTypes.FIVE);
+	vending.insertMoney (CoinTypes.FIVE);
+	
+//	vending.insertMoney (CoinTypes.FIVE);
+//
+//	vending.insertMoney (CoinTypes.FIVE);
+//	vending.insertMoney (CoinTypes.FIVE);
 	
 	
- 	vending.selectDispatch ();
+	
+	
+	
+	
+	vending.selectDispatch ();
 	
 	
 	

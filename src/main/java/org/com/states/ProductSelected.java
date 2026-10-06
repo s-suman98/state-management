@@ -34,12 +34,16 @@ public void insertMoney(CoinTypes coin, MachineContext machineContext) {
 						+ machineContext.getProductCode()
 		);
 		
+		
+		System.out.println ("MOVED TO "+ StateEnum.MONEY+"sTATE AFTER FULL payment");
+		
+		
 		machineContext.setMachineState(new coinInserted ());
 	}else{
 		
 		System.out.println ("Total needed"+machineContext.getItemPriceNeeded ()+"inserted"+machineContext.getBalance ());
 		
-		System.out.println ("insert mode coins");
+		System.out.println ("insert more coins");
 	}
 }
 
