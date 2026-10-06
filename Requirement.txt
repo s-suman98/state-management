@@ -1,0 +1,22 @@
+
+
+ 1. vending machine
+
+ 1.accepts only coins
+
+ 2. have admin api to restrok the product
+
+ 3.change on the last
+
+ 4 state
+
+    idle
+
+    productSlected
+    havemoney
+    dispencing item
+
+
+
+    idem
+
