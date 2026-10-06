@@ -19,22 +19,28 @@ public void selectProduct (String productCode, MachineContext machineContext) {
 }
 
 @Override
-public void insertMoney (CoinTypes coin, MachineContext machineContext) {
+public void insertMoney(CoinTypes coin, MachineContext machineContext) {
 	
-	if((machineContext.getBalance ()+coin.getValue ())> machineContext.getItemPriceNeeded ()){
+	System.out.println("Coin Inserted: " + coin.getValue());
+	
+	machineContext.setBalance(
+			machineContext.getBalance() + coin.getValue()
+	);
+	
+	if (machineContext.getBalance() >= machineContext.getItemPriceNeeded()) {
 		
-		System.out.println ("Sufficient coin for the product "+machineContext.getProductCode ());
+		System.out.println(
+				"Sufficient coin for the product "
+						+ machineContext.getProductCode()
+		);
 		
-		machineContext.setMachineState ( new coinInserted ());
+		machineContext.setMachineState(new coinInserted ());
 	}else{
 		
-		System.out.println("Coin Inserted: " + coin.getValue());
+		System.out.println ("Total needed"+machineContext.getItemPriceNeeded ()+"inserted"+machineContext.getBalance ());
 		
-		machineContext.setBalance (machineContext.getBalance ()+coin.getValue ());
+		System.out.println ("insert mode coins");
 	}
-
-
-
 }
 
 @Override

@@ -14,7 +14,7 @@ public class IdleState implements MachineI {
 private StateEnum label= StateEnum.IDLE;
 @Override
 public void selectProduct (String productCode, MachineContext machineContext) {
-	if(machineContext.getInventry ().isAvailable (productCode)){
+	if(!machineContext.getInventry ().isAvailable (productCode)){
 		System.out.println ("item not available stock over"+ productCode);
 		return;
 	}
