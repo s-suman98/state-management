@@ -25,7 +25,7 @@ public Inventry () {
 	
 	this.addItem (new Item ("COKE", "cokacola", 30), 2);
 	this.addItem (new Item ("CAKE", "cake for better taste", 50), 3);
-	this.addItem (new Item ("SAMOSA", "cryspuy samosa", 10), 5);
+	this.addItem (new Item ("SAMOSA", "cryspuy samosa", 12), 5);
 	
 }
 
