@@ -22,10 +22,12 @@ public static void main (String[] args) {
 vending.insertMoney (CoinTypes.FIVE);
 	vending.insertMoney (CoinTypes.FIVE);
 	
-//	vending.insertMoney (CoinTypes.FIVE);
-//
-//	vending.insertMoney (CoinTypes.FIVE);
-//	vending.insertMoney (CoinTypes.FIVE);
+	vending.insertMoney (CoinTypes.FIVE);
+	
+	
+	
+	
+	
 	
 	
 	

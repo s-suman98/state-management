@@ -37,5 +37,10 @@ public void selectDispatch (MachineContext machineContext) {
 	
 	machineContext.setMachineState (new DispencingState ());
 	
+	
+	//Phire automatically kuch time ke badd
+	
+	machineContext.selectDispatch();
+	
 }
 }
